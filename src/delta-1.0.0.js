@@ -20,6 +20,10 @@
 				callback();
 			});
 		};
+
+		self.setText = function(text){
+			$('#' + domId).val(text);
+		};
 	};
 
 }(window.delta = window.delta || {}))
