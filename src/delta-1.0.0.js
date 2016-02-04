@@ -11,5 +11,15 @@
 			$('#' + domId).val(text);
 		};
 	};
-	
+
+	delta.Button = function(domId){
+		var self = this;
+
+		self.onClick = function(callback){
+			$('#' + domId).click(function(){
+				callback();
+			});
+		};
+	};
+
 }(window.delta = window.delta || {}))
