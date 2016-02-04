@@ -8,8 +8,8 @@
 		};
 
 		self.setText = function(text){
-			return $('#' + domId).val(text);
+			$('#' + domId).val(text);
 		};
 	};
-
+	
 }(window.delta = window.delta || {}))
