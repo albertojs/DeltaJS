@@ -10,6 +10,10 @@
 		self.setText = function(text){
 			$('#' + domId).val(text);
 		};
+
+		self.hide = function(){
+			$('#' + domId).hide();
+		};
 	};
 
 	delta.Button = function(domId){
