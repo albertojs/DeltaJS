@@ -28,6 +28,10 @@
 		self.setText = function(text){
 			$('#' + domId).val(text);
 		};
+
+		self.hide = function(){
+			$('#' + domId).hide();
+		};
 	};
 
 }(window.delta = window.delta || {}))
