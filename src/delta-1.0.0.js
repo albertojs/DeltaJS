@@ -18,6 +18,10 @@
 		self.show = function(){
 			$('#' + domId).show();
 		};
+
+		self.clear = function(){
+			$('#' + domId).val('');
+		};
 	};
 
 	delta.Button = function(domId){
