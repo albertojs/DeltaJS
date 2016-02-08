@@ -22,6 +22,10 @@
 		self.clear = function(){
 			$('#' + domId).val('');
 		};
+
+		self.focus = function(){
+			$('#' + domId).focus();
+		};
 	};
 
 	delta.Button = function(domId){
