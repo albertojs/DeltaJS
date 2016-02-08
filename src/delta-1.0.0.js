@@ -48,6 +48,10 @@
 		self.show = function(){
 			$('#' + domId).show();
 		};
+
+		self.focus = function(){
+			$('#' + domId).focus();
+		};
 	};
 
 }(window.delta = window.delta || {}))
