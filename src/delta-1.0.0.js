@@ -36,6 +36,10 @@
 		self.hide = function(){
 			$('#' + domId).hide();
 		};
+
+		self.show = function(){
+			$('#' + domId).show();
+		};
 	};
 
 }(window.delta = window.delta || {}))
