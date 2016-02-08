@@ -14,6 +14,10 @@
 		self.hide = function(){
 			$('#' + domId).hide();
 		};
+
+		self.show = function(){
+			$('#' + domId).show();
+		};
 	};
 
 	delta.Button = function(domId){
