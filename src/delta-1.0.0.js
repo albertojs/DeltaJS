@@ -26,6 +26,12 @@
 		self.focus = function(){
 			$('#' + domId).focus();
 		};
+
+		self.onKeyPress = function(callback){
+			$('#' + domId).keypress(function(){
+				callback();
+			});
+		};
 	};
 
 	delta.Button = function(domId){
