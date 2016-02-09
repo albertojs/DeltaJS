@@ -60,4 +60,17 @@
 		};
 	};
 
+	delta.Client = function(){
+		var self = this;
+
+		self.get = function(url, successCallback, errorCallback)
+		{
+			$.ajax({
+					url: url, 
+					type: "GET",
+					success: successCallback,
+					error: errorCallback})
+		};
+	};
+
 }(window.delta = window.delta || {}))
