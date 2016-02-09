@@ -71,6 +71,16 @@
 					success: successCallback,
 					error: errorCallback})
 		};
+
+		self.post = function(data, url, successCallback, errorCallback)
+		{
+			$.ajax({
+					url: url,
+					data: data, 
+					type: "POST",
+					success: successCallback,
+					error: errorCallback})
+		};
 	};
 
 }(window.delta = window.delta || {}))
