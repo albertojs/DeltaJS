@@ -76,8 +76,9 @@
 		{
 			$.ajax({
 					url: url,
-					data: data, 
+					data: JSON.stringify(data),
 					type: "POST",
+					contentType: "application/json",
 					success: successCallback,
 					error: errorCallback})
 		};
