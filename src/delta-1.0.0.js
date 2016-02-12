@@ -18,6 +18,10 @@
 		self.show = function(){
 			$('#' + domId).show();
 		};
+
+		self.toggle = function(miliseconds){
+			$('#' + domId).toggle(miliseconds);	
+		}
 	};
 
 	delta.TextBox = function(domId){
