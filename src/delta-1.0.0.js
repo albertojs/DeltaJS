@@ -11,12 +11,12 @@
 			return $('#' + domId).text();
 		};
 
-		self.hide = function(){
-			$('#' + domId).hide();
+		self.hide = function(miliseconds){
+			$('#' + domId).hide(miliseconds);
 		};
 
-		self.show = function(){
-			$('#' + domId).show();
+		self.show = function(miliseconds){
+			$('#' + domId).show(miliseconds);
 		};
 
 		self.toggle = function(miliseconds){
