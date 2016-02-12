@@ -6,6 +6,10 @@
 		self.setText = function(text){
 			$('#' + domId).text(text);
 		};
+
+		self.getText = function(){
+			return $('#' + domId).text();
+		};
 	};
 
 	delta.TextBox = function(domId){
