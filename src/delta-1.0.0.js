@@ -10,6 +10,10 @@
 		self.getText = function(){
 			return $('#' + domId).text();
 		};
+
+		self.hide = function(){
+			$('#' + domId).hide();
+		};
 	};
 
 	delta.TextBox = function(domId){
