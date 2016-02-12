@@ -14,6 +14,10 @@
 		self.hide = function(){
 			$('#' + domId).hide();
 		};
+
+		self.show = function(){
+			$('#' + domId).show();
+		};
 	};
 
 	delta.TextBox = function(domId){
