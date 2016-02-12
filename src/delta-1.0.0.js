@@ -1,5 +1,13 @@
 (function(delta){
 
+	delta.Label = function(domId){
+		var self = this;
+
+		self.setText = function(text){
+			$('#' + domId).text(text);
+		};
+	};
+
 	delta.TextBox = function(domId){
 		var self = this;
 
