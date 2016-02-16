@@ -24,6 +24,14 @@
 		}
 	};
 
+	delta.Panel = function(domId){
+		var self = this;
+
+		self.hide = function(miliseconds){
+			$('#' + domId).hide(miliseconds);
+		};
+	};
+
 	delta.TextBox = function(domId){
 		var self = this;
 
