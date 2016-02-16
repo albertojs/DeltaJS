@@ -30,6 +30,10 @@
 		self.hide = function(miliseconds){
 			$('#' + domId).hide(miliseconds);
 		};
+
+		self.show = function(miliseconds){
+			$('#' + domId).show(miliseconds);
+		};
 	};
 
 	delta.TextBox = function(domId){
