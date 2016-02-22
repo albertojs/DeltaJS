@@ -103,10 +103,16 @@
 	delta.CheckBox = function(domId){
 		var self = this;
 
-		self.isChecked = function()
-		{
+		self.isChecked = function(){
 			return $('#' + domId).prop('checked');
 		};
+
+		self.onChange = function(callback){
+			$('#' + domId).change(function(){
+				callback();
+			});
+		};
+
 	};
 
 	delta.Client = function(){
