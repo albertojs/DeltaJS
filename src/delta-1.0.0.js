@@ -100,6 +100,15 @@
 		};
 	};
 
+	delta.CheckBox = function(domId){
+		var self = this;
+
+		self.isChecked = function()
+		{
+			return $('#' + domId).prop('checked');
+		};
+	};
+
 	delta.Client = function(){
 		var self = this;
 
