@@ -21,7 +21,7 @@
 
 		self.toggle = function(miliseconds){
 			$('#' + domId).toggle(miliseconds);	
-		}
+		};
 	};
 
 	delta.Panel = function(domId){
@@ -37,7 +37,7 @@
 
 		self.toggle = function(miliseconds){
 			$('#' + domId).toggle(miliseconds);	
-		}
+		};
 	};
 
 	delta.TextBox = function(domId){
@@ -61,7 +61,7 @@
 
 		self.toggle = function(miliseconds){
 			$('#' + domId).toggle(miliseconds);	
-		}
+		};
 
 		self.clear = function(){
 			$('#' + domId).val('');
@@ -101,7 +101,7 @@
 
 		self.toggle = function(miliseconds){
 			$('#' + domId).toggle(miliseconds);	
-		}
+		};
 
 		self.focus = function(){
 			$('#' + domId).focus();
@@ -125,11 +125,15 @@
 
 		self.toggle = function(miliseconds){
 			$('#' + domId).toggle(miliseconds);	
-		}
+		};
 
 		self.check = function(){
 			$('#' + domId).prop('checked', true);	
-		}
+		};
+
+		self.unCheck = function(){
+			$('#' + domId).prop('checked', false);	
+		};
 
 		self.onChange = function(callback){
 			$('#' + domId).change(function(){
