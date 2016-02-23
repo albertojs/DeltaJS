@@ -107,6 +107,10 @@
 			return $('#' + domId).prop('checked');
 		};
 
+		self.show = function(miliseconds){
+			$('#' + domId).show(miliseconds);
+		};
+
 		self.onChange = function(callback){
 			$('#' + domId).change(function(){
 				callback();
