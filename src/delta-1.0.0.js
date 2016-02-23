@@ -127,6 +127,10 @@
 			$('#' + domId).toggle(miliseconds);	
 		}
 
+		self.check = function(){
+			$('#' + domId).prop('checked', true);	
+		}
+
 		self.onChange = function(callback){
 			$('#' + domId).change(function(){
 				callback();
