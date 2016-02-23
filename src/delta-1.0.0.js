@@ -111,6 +111,10 @@
 			$('#' + domId).show(miliseconds);
 		};
 
+		self.hide = function(miliseconds){
+			$('#' + domId).hide(miliseconds);
+		};
+
 		self.onChange = function(callback){
 			$('#' + domId).change(function(){
 				callback();
