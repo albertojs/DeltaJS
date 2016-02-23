@@ -95,6 +95,10 @@
 			$('#' + domId).show(miliseconds);
 		};
 
+		self.toggle = function(miliseconds){
+			$('#' + domId).toggle(miliseconds);	
+		}
+
 		self.focus = function(){
 			$('#' + domId).focus();
 		};
