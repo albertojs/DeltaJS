@@ -135,6 +135,10 @@
 			$('#' + domId).prop('checked', false);	
 		};
 
+		self.focus = function(){
+			$('#' + domId).focus();
+		};
+
 		self.onChange = function(callback){
 			$('#' + domId).change(function(){
 				callback();
