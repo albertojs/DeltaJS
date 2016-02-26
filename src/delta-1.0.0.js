@@ -87,6 +87,10 @@
 			});
 		};
 
+		self.getText = function(){
+			return $('#' + domId).val();
+		};
+
 		self.setText = function(text){
 			$('#' + domId).val(text);
 		};
