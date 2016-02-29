@@ -165,6 +165,10 @@
 		self.check = function(){
 			$('#' + domId).prop('checked', true);	
 		};
+
+		self.unCheck = function(){
+			$('#' + domId).prop('checked', false);	
+		};
 	}
 
 	delta.Client = function(){
