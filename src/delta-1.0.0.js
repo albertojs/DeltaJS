@@ -161,6 +161,10 @@
 		self.show = function(miliseconds){
 			$('#' + domId).show(miliseconds);
 		};
+
+		self.check = function(){
+			$('#' + domId).prop('checked', true);	
+		};
 	}
 
 	delta.Client = function(){
