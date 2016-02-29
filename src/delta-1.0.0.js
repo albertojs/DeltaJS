@@ -86,7 +86,7 @@
 				callback();
 			});
 		};
-		
+
 		self.getText = function(){
 			return $('#' + domId).val();
 		};
@@ -156,6 +156,10 @@
 
 		self.hide = function(miliseconds){
 			$('#' + domId).hide(miliseconds);
+		};
+
+		self.show = function(miliseconds){
+			$('#' + domId).show(miliseconds);
 		};
 	}
 
