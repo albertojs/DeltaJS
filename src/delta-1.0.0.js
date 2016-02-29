@@ -86,7 +86,7 @@
 				callback();
 			});
 		};
-
+		
 		self.getText = function(){
 			return $('#' + domId).val();
 		};
@@ -150,6 +150,14 @@
 		};
 
 	};
+
+	delta.RadioButton = function(domId){
+		var self = this;
+
+		self.hide = function(miliseconds){
+			$('#' + domId).hide(miliseconds);
+		};
+	}
 
 	delta.Client = function(){
 		var self = this;
