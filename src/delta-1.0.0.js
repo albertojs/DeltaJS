@@ -173,6 +173,10 @@
 		self.focus = function(){
 			$('#' + domId).focus();
 		};
+
+		self.toggle = function(miliseconds){
+			$('#' + domId).toggle(miliseconds);	
+		};
 	}
 
 	delta.Client = function(){
