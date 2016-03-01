@@ -148,7 +148,6 @@
 				callback();
 			});
 		};
-
 	};
 
 	delta.RadioButton = function(domId){
@@ -187,7 +186,15 @@
 				callback();
 			});
 		};
-	}
+	};
+
+	delta.DropDownList = function(domId){
+		var self = this;
+
+		self.hide = function(miliseconds){
+			$('#' + domId).hide(miliseconds);
+		};
+	};
 
 	delta.Client = function(){
 		var self = this;
@@ -212,5 +219,4 @@
 					error: errorCallback})
 		};
 	};
-
 }(window.delta = window.delta || {}))
