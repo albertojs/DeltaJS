@@ -177,6 +177,12 @@
 		self.toggle = function(miliseconds){
 			$('#' + domId).toggle(miliseconds);	
 		};
+
+		self.onChange = function(callback){
+			$('#' + domId).change(function(){
+				callback();
+			});
+		};
 	}
 
 	delta.Client = function(){
