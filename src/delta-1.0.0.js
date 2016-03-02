@@ -206,6 +206,13 @@
 		self.focus = function(){
 			$('#' + domId).focus();
 		};
+
+		self.onSelectedChange = function(callback){
+			$('#' + domId).change(function(){
+				callback();
+			});
+		};
+
 	};
 
 	delta.Client = function(){
