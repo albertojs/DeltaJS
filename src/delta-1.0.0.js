@@ -213,6 +213,10 @@
 			});
 		};
 
+		self.setSelected = function(index){
+			$('#' + domId).prop('selectedIndex', index);
+		};
+
 	};
 
 	delta.Client = function(){
