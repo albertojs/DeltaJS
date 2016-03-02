@@ -207,7 +207,7 @@
 			$('#' + domId).focus();
 		};
 
-		self.onSelectedChange = function(callback){
+		self.onChange = function(callback){
 			$('#' + domId).change(function(){
 				callback();
 			});
