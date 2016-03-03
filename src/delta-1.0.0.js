@@ -217,6 +217,10 @@
 			$('#' + domId).prop('selectedIndex', index);
 		};
 
+		self.getSelectedIndex = function(){
+			return $('#' + domId).prop('selectedIndex');
+		};
+
 	};
 
 	delta.Client = function(){
