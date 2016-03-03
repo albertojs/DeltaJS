@@ -213,7 +213,7 @@
 			});
 		};
 
-		self.setSelected = function(index){
+		self.setSelectedIndex = function(index){
 			$('#' + domId).prop('selectedIndex', index);
 		};
 
