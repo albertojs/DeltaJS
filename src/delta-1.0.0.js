@@ -231,8 +231,13 @@
 			$.ajax({
 					url: url, 
 					type: "GET",
-					success: successCallback,
-					error: errorCallback})
+					success: function(response) {
+		            	successCallback(JSON.parse(response));
+		        	},
+					error: function (response) {
+		            	errorCallback(JSON.parse(response));
+		        	}
+				});
 		};
 
 		self.post = function(data, url, successCallback, errorCallback)
@@ -242,8 +247,13 @@
 					data: JSON.stringify(data),
 					type: "POST",
 					contentType: "application/json",
-					success: successCallback,
-					error: errorCallback})
+					success: function(response) {
+		            	successCallback(JSON.parse(response));
+		        	},
+					error: function (response) {
+		            	errorCallback(JSON.parse(response));
+		        	}
+				});
 		};
 	};
 }(window.delta = window.delta || {}))
