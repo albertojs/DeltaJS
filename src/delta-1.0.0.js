@@ -229,6 +229,10 @@
 			return $('#' + domId).val();
 		};
 
+		self.setSelectedText = function(text){
+			$('#' + domId + ' option:contains(' + text + ')').attr('selected', true);
+		};
+
 	};
 
 	delta.Client = function(){
