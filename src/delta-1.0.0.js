@@ -247,6 +247,10 @@
 		self.removeByIndex = function(index){
 			$('#' + domId + ' option:eq(' + index + ')').remove();
 		};
+
+		self.removeByValue = function(value){
+			$('#' + domId + ' option[value=' + value + ']').remove();
+		};
 	};
 
 	delta.Client = function(){
