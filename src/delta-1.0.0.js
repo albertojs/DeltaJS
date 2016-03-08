@@ -237,6 +237,12 @@
 			return $('#' + domId + ' option:selected').text();
 		};
 
+		self.add = function(value, text, index){
+			if(index)
+				$('#' + domId + ' option').eq(index).before($('<option></option>').val(value).html(text));
+			else
+				$('#' + domId).append($('<option></option>').val(value).html(text));
+		};
 	};
 
 	delta.Client = function(){
