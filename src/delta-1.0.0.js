@@ -221,6 +221,10 @@
 			return $('#' + domId).prop('selectedIndex');
 		};
 
+		self.setSelectedValue = function(value){
+			$('#' + domId).val(value);
+		};
+
 	};
 
 	delta.Client = function(){
