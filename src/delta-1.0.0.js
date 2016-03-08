@@ -225,6 +225,10 @@
 			$('#' + domId).val(value);
 		};
 
+		self.getSelectedValue = function(){
+			return $('#' + domId).val();
+		};
+
 	};
 
 	delta.Client = function(){
