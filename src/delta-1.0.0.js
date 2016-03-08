@@ -251,6 +251,10 @@
 		self.removeByValue = function(value){
 			$('#' + domId + ' option[value=' + value + ']').remove();
 		};
+
+		self.removeByText = function(text){
+			$('#' + domId + ' option:contains(' + text + ')').remove();
+		};
 	};
 
 	delta.Client = function(){
