@@ -243,6 +243,10 @@
 			else
 				$('#' + domId).append($('<option></option>').val(value).html(text));
 		};
+
+		self.removeByIndex = function(index){
+			$('#' + domId + ' option:eq(' + index + ')').remove();
+		};
 	};
 
 	delta.Client = function(){
