@@ -255,6 +255,11 @@
 		self.removeByText = function(text){
 			$('#' + domId + ' option:contains(' + text + ')').remove();
 		};
+
+		self.clear = function(){
+			$('#' + domId).find('option').remove();
+		};
+
 	};
 
 	delta.Client = function(){
