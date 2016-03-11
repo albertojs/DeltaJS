@@ -76,6 +76,12 @@
 				callback();
 			});
 		};
+
+		self.onKeyRelease = function(callback){
+			$('#' + domId).keyup(function() {
+		        callback();
+		    });
+		};
 	};
 
 	delta.Button = function(domId){
