@@ -22,6 +22,12 @@
 		self.toggle = function(miliseconds){
 			$('#' + domId).toggle(miliseconds);	
 		};
+
+		self.onHover = function(callback){
+			$('#' + domId).hover(function(){
+				callback()
+			});
+		};
 	};
 
 	delta.Panel = function(domId){
