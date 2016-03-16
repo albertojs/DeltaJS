@@ -313,4 +313,12 @@
 				});
 		};
 	};
+
+	delta.Redirector = function(){
+		var self = this;
+
+		self.redirect = function(url){
+			window.location = url;
+		};
+	};
 }(window.delta = window.delta || {}))
