@@ -332,6 +332,10 @@
 		self.get = function(name){
 			return $.cookie(name);
 		};
+
+		self.remove = function(name){
+			$.removeCookie(name);
+		};
 	};
 
 }(window.delta = window.delta || {}))
