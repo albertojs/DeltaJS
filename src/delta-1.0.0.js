@@ -321,4 +321,13 @@
 			window.location = url;
 		};
 	};
+
+	delta.CookieManager = function(){
+		var self = this;
+
+		self.set = function(name, value){
+			$.cookie(name, value);
+		};
+	};
+
 }(window.delta = window.delta || {}))
