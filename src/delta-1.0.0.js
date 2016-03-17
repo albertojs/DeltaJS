@@ -328,6 +328,10 @@
 		self.set = function(name, value){
 			$.cookie(name, value);
 		};
+
+		self.get = function(name){
+			return $.cookie(name);
+		};
 	};
 
 }(window.delta = window.delta || {}))
