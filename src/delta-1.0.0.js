@@ -325,8 +325,11 @@
 	delta.CookieManager = function(){
 		var self = this;
 
-		self.set = function(name, value){
-			$.cookie(name, value);
+		self.set = function(name, value, expirationInDays){
+			if(expirationInDays)
+				$.cookie(name, value,{ expires : expirationInDays });
+			else
+				$.cookie(name, value);
 		};
 
 		self.get = function(name){
