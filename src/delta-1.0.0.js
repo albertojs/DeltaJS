@@ -42,13 +42,17 @@
 		};
 
 		self.toggle = function(miliseconds){
-			$('#' + domId).toggle(miliseconds);	
+			$('#' + domId).toggle(miliseconds);
 		};
 
 		self.onHover = function(callback){
 			$('#' + domId).hover(function(){
 				callback()
 			});
+		};
+
+		self.setHtml = function(html){
+			$('#' + domId).append(html);
 		};
 	};
 
