@@ -54,6 +54,10 @@
 		self.setHtml = function(html){
 			$('#' + domId).append(html);
 		};
+
+		self.clear = function(){
+			$('#' + domId).empty();
+		};
 	};
 
 	delta.TextBox = function(domId){
