@@ -2,29 +2,34 @@
 
 	delta.Label = function(domId){
 		var self = this;
+		var label = $('#' + domId);
 
 		self.setText = function(text){
-			$('#' + domId).text(text);
+			label.text(text);
 		};
 
 		self.getText = function(){
-			return $('#' + domId).text();
+			return label.text();
+		};
+
+		self.clear = function(){
+			  label.empty();
 		};
 
 		self.hide = function(miliseconds){
-			$('#' + domId).hide(miliseconds);
+			label.hide(miliseconds);
 		};
 
 		self.show = function(miliseconds){
-			$('#' + domId).show(miliseconds);
+			label.show(miliseconds);
 		};
 
 		self.toggle = function(miliseconds){
-			$('#' + domId).toggle(miliseconds);	
+			label.toggle(miliseconds);
 		};
 
 		self.onHover = function(callback){
-			$('#' + domId).hover(function(){
+			label.hover(function(){
 				callback()
 			});
 		};
@@ -32,73 +37,75 @@
 
 	delta.Panel = function(domId){
 		var self = this;
+		var panel = $('#' + domId);
 
 		self.hide = function(miliseconds){
-			$('#' + domId).hide(miliseconds);
+			panel.hide(miliseconds);
 		};
 
 		self.show = function(miliseconds){
-			$('#' + domId).show(miliseconds);
+			panel.show(miliseconds);
 		};
 
 		self.toggle = function(miliseconds){
-			$('#' + domId).toggle(miliseconds);
+			panel.toggle(miliseconds);
 		};
 
 		self.onHover = function(callback){
-			$('#' + domId).hover(function(){
+			panel.hover(function(){
 				callback()
 			});
 		};
 
 		self.setHtml = function(html){
-			$('#' + domId).append(html);
+			panel.append(html);
 		};
 
 		self.clear = function(){
-			$('#' + domId).empty();
+			panel.empty();
 		};
 	};
 
 	delta.TextBox = function(domId){
 		var self = this;
+		var textBox = $('#' + domId);
 
 		self.getText = function(){
-			return $('#' + domId).val();
+			return textBox.val();
 		};
 
 		self.setText = function(text){
-			$('#' + domId).val(text);
+			textBox.val(text);
 		};
 
 		self.hide = function(miliseconds){
-			$('#' + domId).hide(miliseconds);
+			textBox.hide(miliseconds);
 		};
 
 		self.show = function(miliseconds){
-			$('#' + domId).show(miliseconds);
+			textBox.show(miliseconds);
 		};
 
 		self.toggle = function(miliseconds){
-			$('#' + domId).toggle(miliseconds);	
+			textBox.toggle(miliseconds);
 		};
 
 		self.clear = function(){
-			$('#' + domId).val('');
+			textBox.val('');
 		};
 
 		self.focus = function(){
-			$('#' + domId).focus();
+			textBox.focus();
 		};
 
 		self.onKeyPress = function(callback){
-			$('#' + domId).keypress(function(){
+			textBox.keypress(function(){
 				callback();
 			});
 		};
 
 		self.onKeyRelease = function(callback){
-			$('#' + domId).keyup(function() {
+			textBox.keyup(function() {
 		        callback();
 		    });
 		};
@@ -106,71 +113,73 @@
 
 	delta.Button = function(domId){
 		var self = this;
+		var button = $('#' + domId);
 
 		self.onClick = function(callback){
-			$('#' + domId).click(function(){
+			button.click(function(){
 				callback();
 			});
 		};
 
 		self.getText = function(){
-			return $('#' + domId).val();
+			return button.val();
 		};
 
 		self.setText = function(text){
-			$('#' + domId).val(text);
+			button.val(text);
 		};
 
 		self.hide = function(miliseconds){
-			$('#' + domId).hide(miliseconds);
+			button.hide(miliseconds);
 		};
 
 		self.show = function(miliseconds){
-			$('#' + domId).show(miliseconds);
+			button.show(miliseconds);
 		};
 
 		self.toggle = function(miliseconds){
-			$('#' + domId).toggle(miliseconds);	
+			button.toggle(miliseconds);
 		};
 
 		self.focus = function(){
-			$('#' + domId).focus();
+			button.focus();
 		};
 	};
 
 	delta.CheckBox = function(domId){
 		var self = this;
+		var checkBox = $('#' + domId);
 
 		self.isChecked = function(){
-			return $('#' + domId).prop('checked');
+			return checkBox.prop('checked');
 		};
 
 		self.show = function(miliseconds){
-			$('#' + domId).show(miliseconds);
+			checkBox.show(miliseconds);
 		};
 
 		self.hide = function(miliseconds){
-			$('#' + domId).hide(miliseconds);
+			checkBox.hide(miliseconds);
 		};
 
 		self.toggle = function(miliseconds){
-			$('#' + domId).toggle(miliseconds);	
+			checkBox.toggle(miliseconds);
 		};
 
 		self.check = function(){
-			$('#' + domId).prop('checked', true);	
+			checkBox.prop('checked', true);
 		};
 
 		self.unCheck = function(){
-			$('#' + domId).prop('checked', false);	
+			checkBox.prop('checked', false);
 		};
 
 		self.focus = function(){
-			$('#' + domId).focus();
+			checkBox.focus();
 		};
 
 		self.onChange = function(callback){
-			$('#' + domId).change(function(){
+			checkBox.change(function(){
 				callback();
 			});
 		};
@@ -178,37 +187,38 @@
 
 	delta.RadioButton = function(domId){
 		var self = this;
+		var radioButton = $('#' + domId);
 
 		self.hide = function(miliseconds){
-			$('#' + domId).hide(miliseconds);
+			radioButton.hide(miliseconds);
 		};
 
 		self.show = function(miliseconds){
-			$('#' + domId).show(miliseconds);
+			radioButton.show(miliseconds);
 		};
 
 		self.check = function(){
-			$('#' + domId).prop('checked', true);	
+			radioButton.prop('checked', true);
 		};
 
 		self.unCheck = function(){
-			$('#' + domId).prop('checked', false);	
+			radioButton.prop('checked', false);
 		};
 
 		self.focus = function(){
-			$('#' + domId).focus();
+			radioButton.focus();
 		};
 
 		self.toggle = function(miliseconds){
-			$('#' + domId).toggle(miliseconds);	
+			radioButton.toggle(miliseconds);
 		};
 
 		self.isChecked = function(){
-			return $('#' + domId).prop('checked');
+			return radioButton.prop('checked');
 		};
 
 		self.onChange = function(callback){
-			$('#' + domId).change(function(){
+			radioButton.change(function(){
 				callback();
 			});
 		};
@@ -216,43 +226,44 @@
 
 	delta.DropDownList = function(domId){
 		var self = this;
+		var dropDownList = $('#' + domId);
 
 		self.hide = function(miliseconds){
-			$('#' + domId).hide(miliseconds);
+			dropDownList.hide(miliseconds);
 		};
 
 		self.show = function(miliseconds){
-			$('#' + domId).show(miliseconds);
+			dropDownList.show(miliseconds);
 		};
 
 		self.toggle = function(miliseconds){
-			$('#' + domId).toggle(miliseconds);	
+			dropDownList.toggle(miliseconds);
 		};
 
 		self.focus = function(){
-			$('#' + domId).focus();
+			dropDownList.focus();
 		};
 
 		self.onChange = function(callback){
-			$('#' + domId).change(function(){
+			dropDownList.change(function(){
 				callback();
 			});
 		};
 
 		self.setSelectedIndex = function(index){
-			$('#' + domId).prop('selectedIndex', index);
+			dropDownList.prop('selectedIndex', index);
 		};
 
 		self.getSelectedIndex = function(){
-			return $('#' + domId).prop('selectedIndex');
+			return dropDownList.prop('selectedIndex');
 		};
 
 		self.setSelectedValue = function(value){
-			$('#' + domId).val(value);
+			dropDownList.val(value);
 		};
 
 		self.getSelectedValue = function(){
-			return $('#' + domId).val();
+			return dropDownList.val();
 		};
 
 		self.setSelectedText = function(text){
@@ -267,7 +278,7 @@
 			if(index)
 				$('#' + domId + ' option').eq(index).before($('<option></option>').val(value).html(text));
 			else
-				$('#' + domId).append($('<option></option>').val(value).html(text));
+				dropDownList.append($('<option></option>').val(value).html(text));
 		};
 
 		self.removeByIndex = function(index){
@@ -283,18 +294,39 @@
 		};
 
 		self.clear = function(){
-			$('#' + domId).find('option').remove();
+			dropDownList.find('option').remove();
 		};
 
+	};
+
+	delta.List = function(domId){
+		var self = this;
+		var list = $('#' + domId);
+
+		self.clear = function(){
+			list.empty();
+		};
+
+		self.addItem = function(item){
+			list.append(
+        $("<li id='" + item.id + "'>" + item.name + "</li>"));
+		};
+
+		self.addHtmlItem = function(htmlItem){
+			list.append(htmlItem);
+		};
+
+		self.removeItem = function(itemId){
+				list.find(itemId).remove();
+		};
 	};
 
 	delta.Client = function(){
 		var self = this;
 
-		self.get = function(url, successCallback, errorCallback)
-		{
+		self.get = function(url, successCallback, errorCallback){
 			$.ajax({
-					url: url, 
+					url: url,
 					type: "GET",
 					success: function(response) {
 		            	successCallback(JSON.parse(response));
@@ -305,8 +337,7 @@
 				});
 		};
 
-		self.post = function(data, url, successCallback, errorCallback)
-		{
+		self.post = function(data, url, successCallback, errorCallback){
 			$.ajax({
 					url: url,
 					data: JSON.stringify(data),
@@ -320,6 +351,19 @@
 		        	}
 				});
 		};
+
+		self.delete = function(url, successCallback, errorCallback){
+			$.ajax({
+	      url: url,
+	      type: 'DELETE'
+	    })
+	    .done(function() {
+	      successCallback();
+	    })
+	    .fail(function(error) {
+	      errorCallback(error);
+	    });
+	  };
 	};
 
 	delta.Redirector = function(){
